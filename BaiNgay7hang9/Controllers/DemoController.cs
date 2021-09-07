@@ -21,8 +21,8 @@ namespace BaiNgay7hang9.Controllers
         {
             double soa = Convert.ToDouble(soX);
             double sob = Convert.ToDouble(soY);
-            double x = gtp.GiaiPhuongtrinh(soa, sob)
-            ViewBag.Giaipt = ketqua;
+            double z = gtp.GiaiPhuongtrinh(soa, sob);
+            ViewBag.Giatriz = z;
 
             return View();
 

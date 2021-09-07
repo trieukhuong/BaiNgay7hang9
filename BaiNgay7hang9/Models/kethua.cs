@@ -6,10 +6,10 @@ using System.Web;
 namespace BaiNgay7hang9.Models
 {
     public class kethua
-        public double GiaiPhuongTrinh(double hesoA, double hesoB)
+        public double GiaiPhuongTrinh(double hesoa, double hesob)
     {
-        double x = -hesoB / hesoA;
-        return x;
+        double z = -hesob / hesoa;
+        return z;
 
 
     }
