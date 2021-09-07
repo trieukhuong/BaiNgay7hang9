@@ -13,16 +13,17 @@ namespace BaiNgay7hang9.Controllers
         {
             return View();
         }
-    }
-    [HttpPost]
-    public ActionResult GPT(string soX, string soY)
-    {
-        double soa = Convert.ToDouble(soX);
-        double sob = Convert.ToDouble(soY);
-        double ketqua = -sob / soa;
-        ViewBag.Giaipt = ketqua;
-       
-        return View();
 
+        [HttpPost]
+        public ActionResult GPT(string soX, string soY)
+        {
+            double soa = Convert.ToDouble(soX);
+            double sob = Convert.ToDouble(soY);
+            double ketqua = -sob / soa;
+            ViewBag.Giaipt = ketqua;
+
+            return View();
+
+        }
     }
 }
