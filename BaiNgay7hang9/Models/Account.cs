@@ -7,8 +7,8 @@ namespace BaiNgay7hang9.Models
 {
     public class Account
     {
-        public string Usename { get; set }
-        public string Password { get; set }
+        public string Usename { get; set; }
+        public string Password { get; set; }
 
     }
 }
