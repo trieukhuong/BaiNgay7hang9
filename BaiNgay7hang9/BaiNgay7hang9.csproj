@@ -132,6 +132,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109210122499_IntialCreate.cs" />
+    <Compile Include="Migrations\202109210122499_IntialCreate.designer.cs">
+      <DependentUpon>202109210122499_IntialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\kethua.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
@@ -190,6 +195,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109210122499_IntialCreate.resx">
+      <DependentUpon>202109210122499_IntialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
