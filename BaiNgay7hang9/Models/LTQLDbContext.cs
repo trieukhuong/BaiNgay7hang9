@@ -12,6 +12,7 @@ namespace BaiNgay7hang9.Models
         {
         }
         public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>()
@@ -19,6 +20,7 @@ namespace BaiNgay7hang9.Models
            .IsUnicode(false);
             modelBuilder.Entity<Account>().Property(e => e.Password)
             .IsUnicode(false);
+
         }
     }
 }
